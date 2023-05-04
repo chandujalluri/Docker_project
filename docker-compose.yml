@@ -3,17 +3,17 @@ services:
   train:
     image: chandu2024/train:latest
     ports:
-      - "8000:80"
+      - "8004:80"
     replicas: 3
         
   movie:
     image: chandu2024/movie:latest
     ports:
-      - "8001:80"
+      - "8005:80"
     replicas: 3
     
   recharge:
     image: chandu2024/recharge:latest
     ports:
-      - "8002:80"    
+      - "8006:80"    
     replicas: 3
