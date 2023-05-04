@@ -4,16 +4,19 @@ services:
     image: chandu2024/train:latest
     ports:
       - "8004:80"
-    replicas: 3
+    deploy:
+      replicas: 3
         
   movie:
     image: chandu2024/movie:latest
     ports:
       - "8005:80"
-    replicas: 3
+    deploy:
+      replicas: 3
     
   recharge:
     image: chandu2024/recharge:latest
     ports:
       - "8006:80"    
-    replicas: 3
+    deploy:
+      replicas: 3
